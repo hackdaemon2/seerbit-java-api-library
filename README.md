@@ -41,9 +41,10 @@ The documentation, installation guide, detailed description of the SeerBit API a
 
 ## Installation
 
+You can use Maven or just download the release JAR file.
+
 ### Download JAR
 
-You can use Maven or just download the release.
 * Download seerbit-java-api JAR file
 * Add the JAR file as a module to your Java project:
 * On Intellij IDEA: File -> Project Structure -> Modules -> Dependencies Tab -> Add -> JARs or Directories -> Attach JAR
@@ -68,7 +69,7 @@ You can contribute to this repository so that anyone can benefit from it:
 
 ## Examples
 
-You can also check the [src/main/java/com/seerbit/demo](https://github.com/seerbit/seerbit-java-api/tree/master/src/main/java/com/seerbit/demo) folder in this repository for more examples of usage.
+You can also check the [src/main/java/com/seerbit/demo](https://github.com/hackdaemon2/seerbit-java-api-library/tree/master/src/main/java/com/seerbit/demo) folder in this repository for more examples of usage.
 
 ## Using the Library
 
@@ -119,16 +120,16 @@ Then retrieve your token after authenticating and pass it to the CardService con
     Card card = new Card();
 
     account.setName("AYODELE PRAISE EREMA");
-    account.setBvn("22141741835");
-    account.setSender("0038721434");
+    account.setBvn("1234567890");
+    account.setSender("0038322434");
     account.setSenderBankCode("214");
-    account.setSenderDateOfBirth("04011984");
+    account.setSenderDateOfBirth("04011991");
 
     card.setCvv("100");
-    card.setNumber("5061040201593455366");
+    card.setNumber("5061230201593455366");
     card.setExpirymonth("05");
-    card.setExpiryyear("21");
-    card.setPin("8319");
+    card.setExpiryyear("20");
+    card.setPin("1234");
 
     cardPayload.put("fullname", "Aminu Grod");
     cardPayload.put("public_key", client.getConfig().getPublicKey());
