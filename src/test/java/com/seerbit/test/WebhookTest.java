@@ -53,8 +53,8 @@ public class WebhookTest {
             Seerbit seerbitApp = new SeerbitImpl();
             Client client = new Client();
             client.setEnvironment(EnvironmentEnum.LIVE.getEnvironment());
-            client.setUsername("victorighalo@gmail.com");
-            client.setPassword("WISdom@1");
+            client.setUsername("user@gmail.com");
+            client.setPassword("password here");
             client.setAPIBase(seerbitApp.getApiBase());
             client.setTimeout(20);
             MerchantAuthentication authService = new MerchantAuthentication(client);
@@ -77,6 +77,7 @@ public class WebhookTest {
                     webhook.setUrl("www.webhook.com");
                     webhook.setActive(true);
                     webhookPayload.put("webhook", webhook);
+                    // pass the business id and payload
                     json = webhookService.doUpdateWebhookURL("00000001", webhookPayload);
                     System.out.println("Webhook Request: " + GSON.toJson(webhookPayload));
                     System.out.print("Webhook Response: ");
