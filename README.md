@@ -6,7 +6,7 @@
 
 <h1 align="center">
   <img width="40" valign="bottom" src="file:///Users/centricgateway/Downloads/java.png">
-  seerbit-java-api
+  seerbit-java-api-library
 </h1>
 
 <h4 align="center">
