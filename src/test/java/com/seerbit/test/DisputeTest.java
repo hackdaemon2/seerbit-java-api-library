@@ -61,8 +61,8 @@ public class DisputeTest {
             Seerbit seerbitApp = new SeerbitImpl();
             Client client = new Client();
             client.setEnvironment(EnvironmentEnum.LIVE.getEnvironment());
-            client.setUsername("victorighalo@gmail.com");
-            client.setPassword("WISdom@1");
+            client.setUsername("user@gmail.com");
+            client.setPassword("password here");
             client.setTimeout(20);
             client.setAPIBase(seerbitApp.getApiBase());
             MerchantAuthentication authService = new MerchantAuthentication(client);
